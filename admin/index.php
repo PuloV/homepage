@@ -29,7 +29,7 @@
 
         <!-- This code is taken from http://twitter.github.com/bootstrap/examples/hero.html -->
 
-        <div class="navbar navbar-inverse navbar-fixed-top">
+   <!--     <div class="navbar navbar-inverse navbar-fixed-top">
             <div class="navbar-inner">
                 <div class="container">
                     <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
@@ -56,15 +56,17 @@
                                 </ul>
                             </li>
                         </ul>
-                        <form class="navbar-form pull-right">
-                            <input class="span2" type="text" placeholder="Email">
-                            <input class="span2" type="password" placeholder="Password">
-                            <button type="submit" class="btn">Sign in</button>
+                        <form class="navbar-form pull-right" action='login.php' method='post'>
+                            <input class="span2" type="text" placeholder="user" name='user' id='user'>
+                            <input class="span2" type="password" placeholder="password" name='password' id='password'>
+                            
+                            <input type='submit'class="btn" name='Submit' value='Submit' />
                         </form>
-                    </div><!--/.nav-collapse -->
+                    </div>/.nav-collapse 
                 </div>
             </div>
-        </div>
+        </div>-->
+        <?php require_once "menu_func.php"; ?>
 
         <div class="container">
 
